@@ -7,6 +7,10 @@ public class CompilerFactory {
         switch (type) {
             case "cpp":
                 compiler = new CppCompiler();
+                break;
+            case "js":
+                compiler = new JSCompiler();
+                break;
         }
 
         return compiler;
