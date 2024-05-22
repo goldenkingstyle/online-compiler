@@ -1,14 +1,23 @@
 package com.example.server.service;
 
+import lombok.RequiredArgsConstructor;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+
 public class FileService {
 
-    public static String createFile(String extension, ArrayList<String> content) throws IOException {
-        File file = new File("./", String.format("main.%s", extension));
+    private final File file;
+
+    public FileService(String extension) {
+        this.file = new File("./", String.format("main.%s", extension));
+    }
+
+    public String createFile(ArrayList<String> content) throws IOException {
 
         if (file.createNewFile()) {
             try (FileWriter fileWriter = new FileWriter(file)) {
@@ -20,6 +29,11 @@ public class FileService {
 
             }
         }
-        return file.getAbsolutePath();
+
+        return file.getParentFile().getAbsolutePath();
+    }
+
+    public void deleteFile() {
+        file.delete();
     }
 }
