@@ -1,0 +1,6 @@
+.Compilers {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 150px;
+}
