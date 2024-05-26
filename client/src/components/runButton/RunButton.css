@@ -1,0 +1,14 @@
+.RunButton {
+  font-size: 26px;
+  padding: 5px 40px;
+  background-color: #55a348;
+  width: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.RunButton:hover {
+  transition: 0.3s;
+  background-color: #46853b;
+  color: #ffffffb0;
+}

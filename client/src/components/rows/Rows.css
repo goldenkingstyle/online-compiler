@@ -1,0 +1,8 @@
+.Rows{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #353535;
+    padding: 10px 0;
+}

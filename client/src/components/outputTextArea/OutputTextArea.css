@@ -1,0 +1,19 @@
+.OutputTextArea {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #888888;
+    height: 200px;
+
+}
+
+.output-title {
+    font-size: 22px;
+    background-color: #353535;
+    border-bottom: 1px solid #888888;
+    padding: 7px 24px;
+}
+
+.output-content {
+    background-color: #272727;
+}

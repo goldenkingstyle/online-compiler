@@ -9,10 +9,12 @@ const compilers = [
   {
     name: "C++ compiler",
     url: cppUrl,
+    type: "c++",
   },
   {
     name: "JS compiler",
     url: jsUrl,
+    type: "js",
   },
 ];
 

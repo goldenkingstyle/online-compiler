@@ -3,15 +3,15 @@ import { ICompiler } from "../../types/types";
 import CompilerLogo from "../compilerLogo/CompilerLogo";
 import "./CompilersLogo.css";
 
-interface CompilersProps {
+interface CompilersLogoProps {
   compilers: Array<ICompiler>;
 }
 
-export default function Compilers({ compilers }: CompilersProps) {
+export default function CompilersLogo({ compilers }: CompilersLogoProps) {
   return (
     <div className="Compilers">
-      {compilers.map((compiler) => (
-        <CompilerLogo compiler={compiler} />
+      {compilers.map((compiler, index) => (
+        <CompilerLogo key={index} compiler={compiler} />
       ))}
     </div>
   );
