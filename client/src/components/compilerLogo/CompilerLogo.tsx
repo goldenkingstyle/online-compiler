@@ -1,6 +1,6 @@
 import React from "react";
 import { ICompiler } from "../../types/types";
-import "./Compiler.css";
+import "./CompilerLogo.css";
 
 interface CompilersProps {
   compiler: ICompiler;

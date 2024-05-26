@@ -1,5 +1,5 @@
 import React from "react";
-import Compilers from "../compilers/Compilers";
+import CompilersLogo from "../compilersLogo/CompilersLogo";
 import "./Main.css";
 
 import cppUrl from "../../assets/cpp_image.png";
@@ -19,7 +19,7 @@ const compilers = [
 export default function Main() {
   return (
     <div className="Main">
-      <Compilers compilers={compilers} />
+      <CompilersLogo compilers={compilers} />
     </div>
   );
 }
